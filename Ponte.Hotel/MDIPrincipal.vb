@@ -13,28 +13,28 @@ Public Class MDIPrincipal
 
     Private Sub MDIPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Try
-            Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
-            Dim cmd As New SqlCommand
-            Dim reader As SqlDataReader
+        'Try
+        '    Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+        '    Dim cmd As New SqlCommand
+        '    Dim reader As SqlDataReader
 
-            File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
-            cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
+        '    File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
+        '    cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
 
-            cmd.CommandType = CommandType.Text
-            cmd.Connection = sqlConnection1
+        '    cmd.CommandType = CommandType.Text
+        '    cmd.Connection = sqlConnection1
 
-            sqlConnection1.Open()
+        '    sqlConnection1.Open()
 
-            reader = cmd.ExecuteReader()
-            ' Data is accessible through the DataReader object here.
+        '    reader = cmd.ExecuteReader()
+        '    ' Data is accessible through the DataReader object here.
 
 
 
-            sqlConnection1.Close()
-        Catch ex As Exception
-            MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
-        End Try
+        '    sqlConnection1.Close()
+        'Catch ex As Exception
+        '    MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
+        'End Try
 
 
         Try
@@ -256,77 +256,77 @@ Public Class MDIPrincipal
         Movimentacao.ShowDialog(Me)
     End Sub
 
-    Private Sub BackupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackupToolStripMenuItem.Click
+    'Private Sub BackupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackupToolStripMenuItem.Click
 
-        Try
-            Dim sqlConnection1 As New SqlConnection("Data Source=(localdb)\v11.0;Initial Catalog=PousadaDoSimao;")
-            Dim cmd As New SqlCommand
-            Dim reader As SqlDataReader
+    '    Try
+    '        Dim sqlConnection1 As New SqlConnection("Data Source=(localdb)\v11.0;Initial Catalog=PousadaDoSimao;")
+    '        Dim cmd As New SqlCommand
+    '        Dim reader As SqlDataReader
 
-            File.Delete("C:\Users\rafat\Google Drive\Dev\BACKUP\PousadaDaPonte.bak")
-            cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Google Drive\Dev\BACKUP\PousadaDaPonte.bak'"
-            cmd.CommandType = CommandType.Text
-            cmd.Connection = sqlConnection1
+    '        File.Delete("C:\Users\rafat\Google Drive\Dev\BACKUP\PousadaDaPonte.bak")
+    '        cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Google Drive\Dev\BACKUP\PousadaDaPonte.bak'"
+    '        cmd.CommandType = CommandType.Text
+    '        cmd.Connection = sqlConnection1
 
-            sqlConnection1.Open()
+    '        sqlConnection1.Open()
 
-            reader = cmd.ExecuteReader()
-            ' Data is accessible through the DataReader object here.
+    '        reader = cmd.ExecuteReader()
+    '        ' Data is accessible through the DataReader object here.
 
-            sqlConnection1.Close()
-        Catch ex As Exception
-            MsgBox("Conecete o PenDrive.", MsgBoxStyle.Critical, "Erro de Conexão")
-        End Try
+    '        sqlConnection1.Close()
+    '    Catch ex As Exception
+    '        MsgBox("Conecete o PenDrive.", MsgBoxStyle.Critical, "Erro de Conexão")
+    '    End Try
 
-    End Sub
+    'End Sub
 
-    Private Sub MDIPrincipal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Try
-            Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
-            Dim cmd As New SqlCommand
-            Dim reader As SqlDataReader
+    'Private Sub MDIPrincipal_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+    '    Try
+    '        Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+    '        Dim cmd As New SqlCommand
+    '        Dim reader As SqlDataReader
 
-            File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
-            cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
+    '        File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
+    '        cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
 
-            cmd.CommandType = CommandType.Text
-            cmd.Connection = sqlConnection1
+    '        cmd.CommandType = CommandType.Text
+    '        cmd.Connection = sqlConnection1
 
-            sqlConnection1.Open()
+    '        sqlConnection1.Open()
 
-            reader = cmd.ExecuteReader()
-            ' Data is accessible through the DataReader object here.
+    '        reader = cmd.ExecuteReader()
+    '        ' Data is accessible through the DataReader object here.
 
-            sqlConnection1.Close()
-        Catch ex As Exception
-            MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
-        End Try
-    End Sub
+    '        sqlConnection1.Close()
+    '    Catch ex As Exception
+    '        MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
+    '    End Try
+    'End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        Try
-            Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
-            Dim cmd As New SqlCommand
-            Dim reader As SqlDataReader
+    'Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+    '    Try
+    '        Dim sqlConnection1 As New SqlConnection("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+    '        Dim cmd As New SqlCommand
+    '        Dim reader As SqlDataReader
 
-            File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
-            cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
+    '        File.Delete("C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak")
+    '        cmd.CommandText = "BACKUP DATABASE [PousadaDaPonte] TO  DISK = N'C:\Users\rafat\Meu Drive\DEV\BACKUP\PousadaDaPonte.bak'"
 
-            cmd.CommandType = CommandType.Text
-            cmd.Connection = sqlConnection1
+    '        cmd.CommandType = CommandType.Text
+    '        cmd.Connection = sqlConnection1
 
-            sqlConnection1.Open()
+    '        sqlConnection1.Open()
 
-            reader = cmd.ExecuteReader()
-            ' Data is accessible through the DataReader object here.
+    '        reader = cmd.ExecuteReader()
+    '        ' Data is accessible through the DataReader object here.
 
-            sqlConnection1.Close()
-        Catch ex As Exception
-            MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
-        End Try
-    End Sub
+    '        sqlConnection1.Close()
+    '    Catch ex As Exception
+    '        MsgBox("Erro de Conexão.", MsgBoxStyle.Critical, "Erro de Conexão")
+    '    End Try
+    'End Sub
 End Class
