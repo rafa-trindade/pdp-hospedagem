@@ -21,4 +21,4 @@ Este sistema foi criado originalmente para atender à necessidade real do meu pr
 
 ![Painel Principal](docs/painel-principal.png)
 
-![Cadastro Hospedagem](docs/cadastro-hospedagem.png)
+![Cadastro Hospedagem](docs/cadastro-hospedagens.png)
