@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body style="margin: 0px; padding: 0px; ">
+
+    <table border=1 cellspacing=0 cellpadding=0 style='width:100%; border-collapse:collapse;border:none'>
+        <tr>
+            <td width=100% colspan=6 valign=middle style='background-color: #315c69; color: white;width:100%;border:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Dados da Empresa</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td width=8% valign=top style='background-color: #dadada; color: #1d1d1d;width:8%;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>CPF/CNPJ:</b>
+            </td>
+            <td width=15% valign=top style='width:15%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                {{cnpjempresa}}
+            </td>
+
+            <td width=12% valign=top style='background-color: #dadada; color: #1d1d1d;width:12%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Razão Social:</b>
+            </td>
+            <td width=45% valign=top style='width:45%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                {{razaosocial}}
+            </td>
+
+            <td width=15% valign=top style='background-color: #dadada; color: #1d1d1d;width:15%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Qtd. Hospedagens:</b>
+            </td>
+            <td width=5% valign=top style='width:5%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                {{qtdhospedagensempresa}}
+            </td>
+        </tr>
+    </table>
+
+    <br />
+
+    <table border=1 cellspacing=0 cellpadding=0 style='width:100%; border-collapse:collapse;border:none'>
+        <tr>
+            <td width=100% colspan=6 valign=middle style='background-color: #315c69; color: white;width:100%;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Clientes Registrados ({{razaosocial}})</b>
+            </td>
+        </tr>
+
+        <tr style="background-color: #478ba0; color: white;">
+            <td width=23% valign=middle style='width:23%;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Nome Cliente</b>
+            </td>
+            <td width=13% valign=middle style='width:13%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>RG Cliente</b>
+            </td>
+            <td width=13% valign=middle style='width:13%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Telefone Contato</b>
+            </td>
+            <td width=22% valign=middle style='width:22%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Email</b>
+            </td>
+            <td width=15% valign=middle style='width:15%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Data Cadastro</b>
+            </td>
+            <td width=14% valign=middle style='width:14%;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <b>Qtd. Hospedagens</b>
+            </td>
+        </tr>
+
+        <dados></dados>
+
+    </table>
+
+
+</body>
+</html>
