@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{915C74E3-1B0D-4A70-92F5-DB8618F427BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Ponte.Hotel.My.MyApplication</StartupObject>
+    <RootNamespace>Ponte.Hotel</RootNamespace>
+    <AssemblyName>Ponte.Hotel</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\RAFAEL\Desktop\s\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ponte.Hotel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ponte.Hotel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICONE.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CE18C62537ECB5AC810F7F5D9D378A67CC8395E7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ponte.Hotel_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\CadApartamento.Designer.vb">
+      <DependentUpon>CadApartamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadApartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadCliente.Designer.vb">
+      <DependentUpon>CadCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadFuncionario.Designer.vb">
+      <DependentUpon>CadFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadReserva.Designer.vb">
+      <DependentUpon>CadReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadVale.Designer.vb">
+      <DependentUpon>CadVale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadVale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadVendaProduto.Designer.vb">
+      <DependentUpon>CadVendaProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadVendaProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditApartamento.Designer.vb">
+      <DependentUpon>EditApartamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditApartamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditCliente.Designer.vb">
+      <DependentUpon>EditCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditEmpresa.Designer.vb">
+      <DependentUpon>EditEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadHospedagem.Designer.vb">
+      <DependentUpon>CadHospedagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadHospedagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadProduto.Designer.vb">
+      <DependentUpon>CadProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditFuncionario.Designer.vb">
+      <DependentUpon>EditFuncionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditFuncionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditHospedagem.Designer.vb">
+      <DependentUpon>EditHospedagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditHospedagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProduto.Designer.vb">
+      <DependentUpon>EditProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadTipoProduto.Designer.vb">
+      <DependentUpon>CadTipoProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadTipoProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CadEmpresa.Designer.vb">
+      <DependentUpon>CadEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CadEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditReserva.Designer.vb">
+      <DependentUpon>EditReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FinalizarHospedagem.Designer.vb">
+      <DependentUpon>FinalizarHospedagem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FinalizarHospedagem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movimentacao.Designer.vb">
+      <DependentUpon>Movimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pesquisa.Designer.vb">
+      <DependentUpon>Pesquisa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pesquisa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelEmpresas.Designer.vb">
+      <DependentUpon>MostraRelEmpresas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelEmpresas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelEstoque.Designer.vb">
+      <DependentUpon>MostraRelEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelHospedagens.Designer.vb">
+      <DependentUpon>MostraRelHospedagens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelHospedagens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelMovimentacao.Designer.vb">
+      <DependentUpon>MostraRelMovimentacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelMovimentacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelReservas.Designer.vb">
+      <DependentUpon>MostraRelReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelVendas.Designer.vb">
+      <DependentUpon>MostraRelVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Rels\MostraRelVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.vb">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Util\Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CadApartamento.resx">
+      <DependentUpon>CadApartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadCliente.resx">
+      <DependentUpon>CadCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadHospedagem.resx">
+      <DependentUpon>CadHospedagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadReserva.resx">
+      <DependentUpon>CadReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadVale.resx">
+      <DependentUpon>CadVale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadVendaProduto.resx">
+      <DependentUpon>CadVendaProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditApartamento.resx">
+      <DependentUpon>EditApartamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditCliente.resx">
+      <DependentUpon>EditCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditEmpresa.resx">
+      <DependentUpon>EditEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadProduto.resx">
+      <DependentUpon>CadProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditFuncionario.resx">
+      <DependentUpon>EditFuncionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditHospedagem.resx">
+      <DependentUpon>EditHospedagem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProduto.resx">
+      <DependentUpon>EditProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadTipoProduto.resx">
+      <DependentUpon>CadTipoProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CadEmpresa.resx">
+      <DependentUpon>CadEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditReserva.resx">
+      <DependentUpon>EditReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FinalizarHospedagem.resx">
+      <DependentUpon>FinalizarHospedagem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movimentacao.resx">
+      <DependentUpon>Movimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pesquisa.resx">
+      <DependentUpon>Pesquisa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelEmpresas.resx">
+      <DependentUpon>MostraRelEmpresas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelEstoque.resx">
+      <DependentUpon>MostraRelEstoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelHospedagens.resx">
+      <DependentUpon>MostraRelHospedagens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelMovimentacao.resx">
+      <DependentUpon>MostraRelMovimentacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelReservas.resx">
+      <DependentUpon>MostraRelReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Rels\MostraRelVendas.resx">
+      <DependentUpon>MostraRelVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ponte.Hotel.Dominio\Ponte.Hotel.Dominio.vbproj">
+      <Project>{0d362d7a-9915-4efd-8f69-beb9be04acbc}</Project>
+      <Name>Ponte.Hotel.Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ponte.Hotel_TemporaryKey.pfx" />
+    <None Include="Resources\icon-claro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white_texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cinza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-escuro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-medio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-Cadastrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-Gerenciar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-financ.png" />
+    <Content Include="ICONE.ico" />
+    <Content Include="Templates\RelMovimentacao.html" />
+    <Content Include="Templates\RelMovimentacaoItens.html" />
+    <Content Include="Templates\RelVendas.html" />
+    <Content Include="Templates\RelVendasItens.html" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\bg_headerprinc.png" />
+    <None Include="Resources\icon-hospedagem.png" />
+    <None Include="Resources\icon-reserva.png" />
+    <None Include="Resources\icon-cliente.png" />
+    <None Include="Resources\icon-empresa.png" />
+    <None Include="Resources\icon-apartamento.png" />
+    <None Include="Resources\icon-gerenciar-hospedagens.png" />
+    <None Include="Resources\icon-gerenciar-reservas.png" />
+    <None Include="Resources\icon-gerenciar-clientes.png" />
+    <None Include="Resources\icon-gerenciar-empresas.png" />
+    <None Include="Resources\icon-gerenciar-produtos.png" />
+    <None Include="Resources\icon-vendaavulsa.png" />
+    <None Include="Resources\icon-produto.png" />
+    <None Include="Resources\icon-tipoproduto.png" />
+    <None Include="Resources\endereco.png" />
+    <Content Include="resort-icon-150x150.ico" />
+    <Content Include="Templates\RelEmpresa.html" />
+    <Content Include="Templates\RelEmpresaItens.html" />
+    <Content Include="Templates\RelEstoque.html" />
+    <Content Include="Templates\RelEstoqueItens.html" />
+    <Content Include="Templates\RelReserva.html" />
+    <Content Include="Templates\RelReservaItens.html" />
+    <None Include="Resources\LOGO.png" />
+    <None Include="Resources\header_image.png" />
+    <None Include="Resources\header_image2.png" />
+    <Content Include="Templates\RelHospedagemItens.html" />
+    <Content Include="Templates\RelHospedagem.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

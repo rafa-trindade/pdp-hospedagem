@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ponte.Hotel", "Ponte.Hotel\Ponte.Hotel.vbproj", "{915C74E3-1B0D-4A70-92F5-DB8618F427BA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ponte.Hotel.Dominio", "Ponte.Hotel.Dominio\Ponte.Hotel.Dominio.vbproj", "{0D362D7A-9915-4EFD-8F69-BEB9BE04ACBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{915C74E3-1B0D-4A70-92F5-DB8618F427BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915C74E3-1B0D-4A70-92F5-DB8618F427BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915C74E3-1B0D-4A70-92F5-DB8618F427BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915C74E3-1B0D-4A70-92F5-DB8618F427BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D362D7A-9915-4EFD-8F69-BEB9BE04ACBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D362D7A-9915-4EFD-8F69-BEB9BE04ACBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D362D7A-9915-4EFD-8F69-BEB9BE04ACBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D362D7A-9915-4EFD-8F69-BEB9BE04ACBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7742B885-6253-4AF8-BAB8-7A541838E0CA}
+	EndGlobalSection
+EndGlobal
