@@ -15,7 +15,7 @@ Este sistema foi criado originalmente para atender à necessidade real do meu pr
 - **VB.NET** (.NET Framework)
 - **Entity Framework**
 - **Windows Forms**
-- **SQL Server** (banco de dados local ou remoto)
+- **SQL Server**
 
 ## 📸 Capturas de Tela
 
