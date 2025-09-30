@@ -19,6 +19,8 @@ Este sistema foi criado originalmente para atender à necessidade real do meu pr
 
 ## 📸 Capturas de Tela
 
+#### - Painel Principal
 ![Painel Principal](docs/painel-principal.png)
 
+#### - Cadastro de Hospedagem
 ![Cadastro Hospedagem](docs/cadastro-hospedagens.png)
