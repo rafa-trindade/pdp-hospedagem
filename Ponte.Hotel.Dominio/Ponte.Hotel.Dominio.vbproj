@@ -76,16 +76,13 @@
   <ItemGroup>
     <Compile Include="Entidades\clsApartamento.vb" />
     <Compile Include="Entidades\clsConsumacao.vb" />
-    <Compile Include="Entidades\clsFuncionario.vb" />
     <Compile Include="Entidades\clsHospedagem.vb" />
     <Compile Include="Entidades\clsCliente.vb" />
     <Compile Include="Entidades\clsEmpresa.vb" />
     <Compile Include="Entidades\clsMovimentacao.vb" />
-    <Compile Include="Entidades\clsNotaFiscal.vb" />
     <Compile Include="Entidades\clsProduto.vb" />
     <Compile Include="Entidades\clsReserva.vb" />
     <Compile Include="Entidades\clsTipoProduto.vb" />
-    <Compile Include="Entidades\clsVale.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

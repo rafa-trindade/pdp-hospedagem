@@ -188,10 +188,6 @@ Public Class Movimentacao
         MostraRelMovimentacao.ShowDialog(Me)
     End Sub
 
-    Private Sub btVales_Click(sender As Object, e As EventArgs) Handles btVales.Click
-        CadVale.ShowDialog(Me)
-    End Sub
-
     Private Sub dtMes_ValueChanged(sender As Object, e As EventArgs) Handles dtMes.ValueChanged
         carregaGridEntrada()
         carregaGridSaida()

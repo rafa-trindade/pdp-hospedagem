@@ -7,7 +7,6 @@ Public Class FinalizarHospedagem
 
     Private Sub btFinalizar_Click(sender As Object, e As EventArgs) Handles btFinalizar.Click
         Dim movimentacao As New clsMovimentacao
-        Dim nota As New clsNotaFiscal
         Try
             With hospedagem
                 .Desconto = EditHospedagem.txtDesconto.Text
@@ -18,15 +17,9 @@ Public Class FinalizarHospedagem
                 .Apartamento.Status = clsApartamento.StatusApartamento.Disponivel
                 .QuantidadeDiaria = ((dtSaida.Value.Date + dtHoraSaida.Value.TimeOfDay).AddHours(-12) - .DataEntrada.AddHours(-12).Date).Days + 1
                 .Movimentacao = movimentacao
-                .NotaFiscal = nota
                 .ValorDiaria = (From c In db.Apartamento Where c.Id.ToString = EditHospedagem.cbApartamento.SelectedValue.ToString Select c.ValorDiaria).FirstOrDefault
                 .DataSaida = dtSaida.Value.Date + dtHoraSaida.Value.TimeOfDay
 
-
-                nota.Codigo = "000" + dtEntrada.Value.Date.ToString + "-" + dtSaida.Value.Date.ToString + "-" + .Codigo
-                nota.DataNota = (dtSaida.Value.Date + dtHoraSaida.Value.TimeOfDay)
-                nota.ValorTotalNota = Convert.ToDouble(txtTotalAPagar.Text) + Convert.ToDouble(EditHospedagem.txtMostraSinal.Text)
-                db.NotaFiscal.Add(nota)
             End With
 
             movimentacao.DataMovimentacao = (dtSaida.Value.Date + dtHoraSaida.Value.TimeOfDay)

@@ -129,22 +129,10 @@
     <Compile Include="Forms\CadCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CadFuncionario.Designer.vb">
-      <DependentUpon>CadFuncionario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CadFuncionario.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\CadReserva.Designer.vb">
       <DependentUpon>CadReserva.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\CadReserva.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CadVale.Designer.vb">
-      <DependentUpon>CadVale.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CadVale.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CadVendaProduto.Designer.vb">
@@ -310,9 +298,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CadReserva.resx">
       <DependentUpon>CadReserva.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CadVale.resx">
-      <DependentUpon>CadVale.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CadVendaProduto.resx">
       <DependentUpon>CadVendaProduto.vb</DependentUpon>

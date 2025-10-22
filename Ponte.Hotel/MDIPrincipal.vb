@@ -240,14 +240,6 @@ Public Class MDIPrincipal
         MostraRelMovimentacao.ShowDialog(Me)
     End Sub
 
-    Private Sub ValesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ValesToolStripMenuItem.Click
-        CadVale.ShowDialog(Me)
-    End Sub
-
-    Private Sub FuncionáriosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FuncionáriosToolStripMenuItem.Click
-        CadFuncionario.ShowDialog(Me)
-    End Sub
-
     Private Sub CaixaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CaixaToolStripMenuItem.Click
         Movimentacao.ShowDialog(Me)
     End Sub

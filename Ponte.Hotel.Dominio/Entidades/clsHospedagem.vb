@@ -25,7 +25,6 @@ Public Class clsHospedagem
     Private _valorPago As Double
     Private _status As StatusCheckout
     Private _tipoHospedagem As TipoHospedagem
-    Private _notaFiscal As clsNotaFiscal
     Private _reserva As clsReserva
     Private _movimentacao As clsMovimentacao
     Private _valorDiaria As Double
@@ -164,15 +163,6 @@ Public Class clsHospedagem
         End Get
         Set(ByVal value As TipoHospedagem)
             _tipoHospedagem = value
-        End Set
-    End Property
-
-    Public Property NotaFiscal() As clsNotaFiscal
-        Get
-            Return _notaFiscal
-        End Get
-        Set(ByVal value As clsNotaFiscal)
-            _notaFiscal = value
         End Set
     End Property
 

@@ -1,5 +1,6 @@
-﻿Imports System.Data.Entity
-Imports System.Configuration
+﻿Imports System.Configuration
+Imports System.Data.Entity
+Imports System.Data.Entity.ModelConfiguration.Conventions
 Imports Ponte.Hotel.Dominio
 
 Public Class DbContexto
@@ -7,6 +8,10 @@ Public Class DbContexto
 
     Public Sub New()
         MyBase.New("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+    End Sub
+    Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
+        modelBuilder.Conventions.Remove(Of PluralizingTableNameConvention)()
+        MyBase.OnModelCreating(modelBuilder)
     End Sub
 
     Private m_Cliente As DbSet(Of clsCliente)
@@ -16,29 +21,8 @@ Public Class DbContexto
     Private m_TipoProduto As DbSet(Of clsTipoProduto)
     Private m_Hospedagem As DbSet(Of clsHospedagem)
     Private m_Consumacao As DbSet(Of clsConsumacao)
-    Private m_NotaFiscal As DbSet(Of clsNotaFiscal)
     Private m_Reserva As DbSet(Of clsReserva)
     Private m_Movimentacao As DbSet(Of clsMovimentacao)
-    Private m_Vale As DbSet(Of clsVale)
-    Private m_Funcionario As DbSet(Of clsFuncionario)
-
-    Public Property Funcionario() As DbSet(Of clsFuncionario)
-        Get
-            Return m_Funcionario
-        End Get
-        Set(value As DbSet(Of clsFuncionario))
-            m_Funcionario = value
-        End Set
-    End Property
-
-    Public Property Vale() As DbSet(Of clsVale)
-        Get
-            Return m_Vale
-        End Get
-        Set(value As DbSet(Of clsVale))
-            m_Vale = value
-        End Set
-    End Property
 
     Public Property Cliente() As DbSet(Of clsCliente)
         Get
@@ -100,15 +84,6 @@ Public Class DbContexto
         End Get
         Set(value As DbSet(Of clsConsumacao))
             m_Consumacao = value
-        End Set
-    End Property
-
-    Public Property NotaFiscal() As DbSet(Of clsNotaFiscal)
-        Get
-            Return m_NotaFiscal
-        End Get
-        Set(value As DbSet(Of clsNotaFiscal))
-            m_NotaFiscal = value
         End Set
     End Property
 

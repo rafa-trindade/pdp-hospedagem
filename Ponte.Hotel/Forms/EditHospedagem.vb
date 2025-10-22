@@ -576,7 +576,6 @@ Public Class EditHospedagem
 
                 Try
                     Dim cons = (From c In db.Consumacao.Include("Produto") Where c.Hospedagem.Id = hospedagem.Id Select c).ToList
-                    Dim nf = (From c In db.NotaFiscal Where c.Id = hospedagem.NotaFiscal.Id Select c).FirstOrDefault
                     Dim mov = (From c In db.Movimentacao Where c.Id = hospedagem.Movimentacao.Id Select c).FirstOrDefault
                     Dim hosp = (From c In db.Hospedagem Where c.Codigo = txtCodHospedagem.Text Select c).FirstOrDefault
 
@@ -592,7 +591,6 @@ Public Class EditHospedagem
                         db.Consumacao.Remove(h)
                     Next
 
-                    db.NotaFiscal.Remove(nf)
                     db.Movimentacao.Remove(mov)
                     db.Hospedagem.Remove(hosp)
 

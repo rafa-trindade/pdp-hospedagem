@@ -67,26 +67,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ponte.Hotel.exe" size="1400832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ponte.Hotel.exe" size="1392640">
       <assemblyIdentity name="Ponte.Hotel" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mG88MVC18rlly0O8Hu2GOry9obBNtB1s00uo4pQmzGA=</dsig:DigestValue>
+        <dsig:DigestValue>1No4tkujtUJWxoIsnt7I8reAjDlvcWOkLWTeeoepoCc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ponte.Hotel.Dominio.dll" size="24576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ponte.Hotel.Dominio.dll" size="22528">
       <assemblyIdentity name="Ponte.Hotel.Dominio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RoDS1gbzjCt+5+CAWJe6a/cW1hkfWjIzH9JUm9Ai1ig=</dsig:DigestValue>
+        <dsig:DigestValue>wB4Hlscle0tTrhwLuu7TFUobOWVc0TmUtAnDNOaaNSM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
