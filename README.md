@@ -25,5 +25,8 @@ Este sistema foi criado originalmente para atender à necessidade real do meu pr
 #### - Cadastro de Hospedagem
 ![Cadastro Hospedagem](docs/cadastro-hospedagens.png)
 
+#### - Relatório Hospedagem Cliente
+![Relatório Hospedagem Cliente](docs/relatorio-hospedagem.png)
+
 #### - OLTP Model
 ![Model](docs/pdp_OLTP_model.png)
