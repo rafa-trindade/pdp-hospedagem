@@ -7,8 +7,11 @@ Public Class DbContexto
     Inherits DbContext
 
     Public Sub New()
-        MyBase.New("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+        MyBase.New("Data Source=localhost,1433;Initial Catalog=PousadaDaPonte;User ID=rafael;Password=260985Rt;")
+        'MyBase.New("Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=PousadaDaPonte;")
+
     End Sub
+
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
         modelBuilder.Conventions.Remove(Of PluralizingTableNameConvention)()
         MyBase.OnModelCreating(modelBuilder)

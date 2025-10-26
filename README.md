@@ -20,13 +20,13 @@ Este sistema foi criado originalmente para atender à necessidade real do meu pr
 ## 📸 Capturas de Tela
 
 #### - Painel Principal
-![Painel Principal](docs/painel-principal.png)
+![Painel Principal](docs/painel-principal_v2.png)
 
 #### - Cadastro de Hospedagem
-![Cadastro Hospedagem](docs/cadastro-hospedagens.png)
+![Cadastro Hospedagem](docs/cadastro-hospedagens_v2.png)
 
 #### - Relatório Hospedagem Cliente
-![Relatório Hospedagem Cliente](docs/relatorio-hospedagem.png)
+![Relatório Hospedagem Cliente](docs/relatorio-hospedagem_v2.png)
 
 #### - OLTP Model
-![Model](docs/pdp_OLTP_model.png)
+![Model](docs/oltp_model_v2.png)
